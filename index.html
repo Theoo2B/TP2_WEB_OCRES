@@ -3,17 +3,17 @@
 		<meta charset="UTF-8" />
 		<title>Rdio - Luke Chesser</title>
 
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/global.css"/>
+		<!-- CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<!-- JavaScript Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 	</head>
-	<body>
-		<div class='container'>
 
-		
+	<body class="container row">
 		<header>
-			<div class="wrapper">
+			<div class= "wrapper">
 				<div class="logo-search">
 					<img class="pull-left" src="img/logo.png" />
 				</div>
@@ -23,11 +23,20 @@
 					<input type="submit" name="submit" value="Rechercher" class="submit">
 				</form>
 				<div class="user">
-				    <a href="#">Luke Chesser</a>
+					<div class="dropdown">
+						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Luke Chesser</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						  <a class="dropdown-item" href="#">Action</a>
+						  <a class="dropdown-item" href="#">Another action</a>
+						  <a class="dropdown-item" href="#">Something else here</a>
+						</div> 
+					</div>
+				
+					  
 				</div>
 			</div>
 		</header>
-		<aside>
+		<aside class="col-2 d-none d-xl-block">
 			<h3>Browse</h3>
 			<nav class="browse">
 				<ul class="main">
@@ -46,7 +55,8 @@
 			</nav>
 		</aside>
 
-		<main>
+
+		<main class="col-10">
 			<header>
 				<div class="name-photo">
 					<aside>
@@ -159,6 +169,5 @@
 				</article>
 			</section>
 		</main>
-	</div>
 	</body>
 </html>
